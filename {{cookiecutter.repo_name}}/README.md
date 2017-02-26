@@ -2,14 +2,31 @@
 
 {{ cookiecutter.project_description }}
 
-## Batteries included
+## Features (aka Batteries included)
 
-This project uses [Zappa](https://www.zappa.io) to interact with
-[AWS Lambda](https://aws.amazon.com/lambda/details/).
-[Flask](http://flask.pocoo.org) is the web application framework of choice in
-this project. And [Pipenv](http://docs.pipenv.org/en/latest/) is used to
-manage the virtual environment and packages. See the Pipfile
-for more details.
+ * [Zappa](https://www.zappa.io) to interact with
+ [AWS Lambda](https://aws.amazon.com/lambda/details/)
+ * [Flask](http://flask.pocoo.org) is the web application framework
+ * [Flask-S3](http://flask-s3.readthedocs.io/en/latest/) is used to manage the
+ static assets in S3
+ * [Pipenv](http://docs.pipenv.org/en/latest/) is used to manage the virtual
+ environment and packages.
+ * [Boto3](https://boto3.readthedocs.io/en/latest/) to interact with the rest
+ of AWS land.
+{%- if cookiecutter.add_bootstrap_4 == "y" %}
+ * [Bootstrap 4](https://v4-alpha.getbootstrap.com)
+{%- endif %}
+{%- if cookiecutter.add_jquery_and_turbolinks == "y" %}
+ * [Turbolinks](https://github.com/turbolinks/turbolinks)
+ * [jQuery](http://jquery.com)
+{%- endif %}
+{%- if cookiecutter.build_alexa_skill == "y" %}
+ * [Flask-Ask](https://github.com/johnwheeler/flask-ask) to easily develop
+ Alexa skills
+{%- endif %}
+{%- if cookiecutter.build_alexa_skill == "y" and cookiecutter.include_alexa_demo_app == "y" %}
+ * [Alexa Memory Demo App](https://developer.amazon.com/blogs/post/Tx14R0IYYGH3SKT/Flask-Ask-A-New-Python-Framework-for-Rapid-Alexa-Skills-Kit-Development)
+{%- endif %}
 
 ## Usage
 

@@ -45,9 +45,23 @@ $ flask run
  ease the testing of your application.
  * [Flask-S3](http://flask-s3.readthedocs.io/en/latest/) to easily serve the
  static assets of your Flask application from your S3 bucket.
+ * [normalize.css](https://necolas.github.io/normalize.css/) if you don't
+ include Bootstrap 4 (See below).
  * It uses the layout for
  [larger flask applications](http://flask.pocoo.org/docs/0.12/patterns/packages/).
  Mainly, because I prefer a little bit more structure in my projects.
+
+### Optional Features
+
+ * Add [Flask-Ask](https://github.com/johnwheeler/flask-ask) to your project to
+ develop Alexa skills. This also adds a Python file with the demo memory game
+ taken from a
+ [tutorial](https://developer.amazon.com/blogs/post/Tx14R0IYYGH3SKT/Flask-Ask-A-New-Python-Framework-for-Rapid-Alexa-Skills-Kit-Development)
+ posted on AWS developer blog.
+ * Add [Turbolinks](https://github.com/turbolinks/turbolinks)
+ and [jQuery](http://jquery.com) to your project. For some simpler projects I
+ still prefer these trusted tools.
+ * Add [Bootstrap 4](https://v4-alpha.getbootstrap.com) to your project.
 
 ## License
 

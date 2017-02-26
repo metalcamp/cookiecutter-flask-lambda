@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 
+import logging
+
 from flask import Flask
 from flask_s3 import FlaskS3
 from flaskext.markdown import Markdown
+from flask_ask import Ask
 
 # setup the basic Flask app
 app = Flask(__name__)
@@ -16,6 +19,14 @@ FlaskS3(app)
 
 # add the filter from Flask-Markdown
 Markdown(app, extensions=['fenced_code'])
+
+{%- if cookiecutter.build_alexa_skill == "y" %}
+# configure the Ask (aka Alexa) support
+ask = Ask(app, "/")
+logging.getLogger('flask_ask').setLevel(logging.DEBUG)
+
+import {{cookiecutter.module_name}}.intents
+{%- endif %}
 
 import {{cookiecutter.module_name}}.views
 

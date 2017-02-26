@@ -1,5 +1,7 @@
+{%- if cookiecutter.add_bootstrap_4 != "y" %}
 .container {
     margin: 0 auto;
     padding: 2vmax 2vmax 10vmax 2vmax;
     max-width: 700px;
 }
+{% endif %}
