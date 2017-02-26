@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ cookiecutter.project_name }}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+        {%- raw %}
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+        {%- endraw %}
+    </head>
+    <body>
+        {%- raw %}
+        {% block content %}
+            <div class="container">
+                {{ content|markdown }}
+            </div>
+        {% endblock content %}
+        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+        {%- endraw %}
+    </body>
+</html>

@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+[requires]
+python_version = "2.7"
+
+[packages]
+zappa = ">=0.35"
+flask = ">=0.12"
+flask-s3 = ">=0.3"
+flask-markdown = ">=0.3"
+boto3 = ">=1.4"
+
+[dev-packages]
+awscli = "*"
+autopep8 = "*"
+pylint = "*"
+pytest = "*"
+pytest-flask = "*"
