@@ -74,6 +74,11 @@ information see LICENSE.
 
 ## Changelog
 
+### 0.2.0
+
+ * Added optional support for Bootstrap 4, Turbolinks or jQuery.
+ * Added optional Flask-Ask aka Alexa Skill support.
+
 ### 0.1.0
 
  * Initial release.
