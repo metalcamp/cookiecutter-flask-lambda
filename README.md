@@ -1,7 +1,7 @@
 # cookiecutter-flask-lambda
 
 A simple [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/)
-template to create a web application that is deployed on
+template to create a web application or an Alexa Skill that is deployed on
 [AWS Lambda](https://aws.amazon.com/lambda/details/) using
 [Zappa](https://www.zappa.io) and [Flask](http://flask.pocoo.org). The
 resulting project is using [Pipenv](http://docs.pipenv.org/en/latest/) to
