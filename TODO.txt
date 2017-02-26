@@ -1,3 +1,0 @@
-- write a sample test case
-- update the README.md of the project template
-- configure flask-s3
