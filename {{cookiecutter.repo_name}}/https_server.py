@@ -16,7 +16,7 @@ if not os.path.exists(CRT_FILE):
     print("Missing SSL cert file {0}".format(CRT_FILE))
     sys.exit(1)
 
-if not os.path.exists(CRT_FILE):
+if not os.path.exists(KEY_FILE):
     print("Missing SSL key file {0}".format(KEY_FILE))
     sys.exit(1)
 
