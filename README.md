@@ -74,6 +74,10 @@ information see LICENSE.
 
 ## Changelog
 
+### 0.2.1
+
+ * Bugfixing Alexa demo app. Added a missing import.
+
 ### 0.2.0
 
  * Added optional support for Bootstrap 4, Turbolinks or jQuery.
