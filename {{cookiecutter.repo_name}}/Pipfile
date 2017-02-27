@@ -9,6 +9,7 @@ python_version = "2.7"
 zappa = ">=0.35"
 flask = ">=0.12"
 flask-s3 = ">=0.3"
+flask-sslify = ">= 0.1.5"
 flask-markdown = ">=0.3"
 boto3 = ">=1.4"
 {%- if cookiecutter.build_alexa_skill == "y" %}

@@ -45,6 +45,8 @@ $ flask run
  ease the testing of your application.
  * [Flask-S3](http://flask-s3.readthedocs.io/en/latest/) to easily serve the
  static assets of your Flask application from your S3 bucket.
+ * [Flask-SSLify](https://github.com/kennethreitz/flask-sslify) - we all prefer
+ HTTPS these days, don't we. SSLify is activated only in production mode.
  * [normalize.css](https://necolas.github.io/normalize.css/) if you don't
  include Bootstrap 4 (See below).
  * It uses the layout for
@@ -73,6 +75,10 @@ information see LICENSE.
  * Add support for Travis CI to the cookiecutter recipe and the project template.
 
 ## Changelog
+
+### 0.4.0
+
+ * Added Flask-SSLify.
 
 ### 0.3.1
 
