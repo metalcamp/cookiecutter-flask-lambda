@@ -61,6 +61,15 @@ $ export FLASK_DEBUG=1
 $ flask run
 ```
 
+In case you plan to develop an Alexa skill, you need to fireup HTTPS enabled
+debug server. But keep in mind, that you have to create a SSL certificate
+before you can do so and store ssl.key and ssl.crt in the root directory of
+your project.
+
+```
+$ python https_server.py
+```
+
 ### Deploy the project
 
 ```bash

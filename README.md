@@ -9,7 +9,7 @@ manage its virtual environment and packages.
 
 ## Usage
 
-```bash
+```
 $ pip install cookiecutter pipenv
 $ cookiecutter https://github.com/oa/cookiecutter-flask-lambda.git
 $ cd my-fancy-new-project-name
@@ -22,10 +22,19 @@ You will be asked about your basic info (name, project name, repo name, etc.).
 This info will be used in your new project. Afterwards you are ready to fire up
 the local debugging server and start developing your application.
 
-```bash
+```
 $ export FLASK_APP=my_fancy_new_project_name
 $ export FLASK_DEBUG=1
 $ flask run
+```
+
+In case you plan to develop an Alexa skill, you need to fireup HTTPS enabled
+debug server. But keep in mind, that you have to create a SSL certificate
+before you can do so and store ssl.key and ssl.crt in the root directory of
+your project.
+
+```
+$ python https_server.py
 ```
 
 **Enjoy!**
@@ -75,6 +84,15 @@ information see LICENSE.
  * Add support for Travis CI to the cookiecutter recipe and the project template.
 
 ## Changelog
+
+### 0.4.2
+
+ * Bugfixes for https_server.py.
+ * Updates to this file and the README.md of the project template.
+
+### 0.4.1
+
+ * Bugfixes to the default intents file for Alexa skills.
 
 ### 0.4.0
 
