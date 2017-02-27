@@ -22,7 +22,7 @@ Markdown(app, extensions=['fenced_code'])
 
 {%- if cookiecutter.build_alexa_skill == "y" %}
 # configure the Ask (aka Alexa) support
-ask = Ask(app, "/")
+ask = Ask(app, "{{ cookiecutter.module_name }}")
 logging.getLogger('flask_ask').setLevel(logging.DEBUG)
 
 import {{cookiecutter.module_name}}.intents

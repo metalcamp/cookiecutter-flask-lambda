@@ -74,6 +74,10 @@ information see LICENSE.
 
 ## Changelog
 
+### 0.3.1
+
+ * Bugfix for instantiating Flask-Ask.
+
 ### 0.3.0
 
  * Added a simple script to start a local HTTPS server - https_server.py. It
