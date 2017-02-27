@@ -18,7 +18,7 @@ flask-ask = ">=0.8"
 
 [dev-packages]
 awscli = "*"
+flake8 = "*"
 autopep8 = "*"
-pylint = "*"
 pytest = "*"
 pytest-flask = "*"
