@@ -31,4 +31,4 @@ def answer(first, second, third):
     return statement(msg)
 
 
-{%- endif % }
+{%- endif %}
