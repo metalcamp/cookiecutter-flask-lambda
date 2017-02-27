@@ -74,6 +74,11 @@ information see LICENSE.
 
 ## Changelog
 
+### 0.3.0
+
+ * Added a simple script to start a local HTTPS server - https_server.py. It
+ expects a file ssl.cert and ssl.key in your project root.
+
 ### 0.2.1
 
  * Bugfixing Alexa demo app. Added a missing import.
