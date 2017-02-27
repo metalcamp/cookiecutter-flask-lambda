@@ -3,8 +3,8 @@
 from flask import render_template
 from {{cookiecutter.module_name}}.application import app, ask
 from flask_ask import statement, question, session
-
-{%- if cookiecutter.include_alexa_demo_app == "y" %}
+{%- if cookiecutter.include_alexa_demo_app == "y" % }
+from random import randint
 
 
 @ask.launch
@@ -31,4 +31,4 @@ def answer(first, second, third):
     return statement(msg)
 
 
-{%- endif %}
+{%- endif % }
