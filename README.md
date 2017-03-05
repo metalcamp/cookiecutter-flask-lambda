@@ -11,7 +11,7 @@ manage its virtual environment and packages.
 
 ```
 $ pip install cookiecutter pipenv
-$ cookiecutter https://github.com/oa/cookiecutter-flask-lambda.git
+$ cookiecutter https://github.com/oliverandrich/cookiecutter-flask-lambda.git
 $ cd my-fancy-new-project-name
 $ pipenv install --dev --two
 $ pipenv shell
