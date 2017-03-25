@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 
 import logging
 
-from flask import Flask
+from flask import Flask, render_template
 from flask_s3 import FlaskS3
 from flaskext.markdown import Markdown
-from flask_ask import Ask
 from flask_sslify import SSLify
 
-# setup the basic Flask app
+# SETUP FLASK APPLICATION -----------------------------------------------------
+
 app = Flask(__name__)
 
 # configure Flask-S3 support
@@ -18,23 +19,23 @@ app.config["FLASKS3_URL_STYLE"] = "path"
 app.config["FLASKS3_FORCE_MIMETYPE"] = True
 FlaskS3(app)
 
+def upload_static_assets(cli):
+    """Helper function to upload the static assets to S3 in production mode."""
+    import flask_s3
+    flask_s3.create_all(app)
+
 # add the filter from Flask-Markdown
 Markdown(app, extensions=['fenced_code'])
 
 # enforce a redirect to HTTPS. It's only active if your not in debug mode.
 SSLify(app, permanent=True)
 
-{%- if cookiecutter.build_alexa_skill == "y" %}
-# configure the Ask (aka Alexa) support
-ask = Ask(app, "{{ cookiecutter.module_name }}")
-logging.getLogger('flask_ask').setLevel(logging.DEBUG)
+# VIEWS -----------------------------------------------------------------------
 
-import {{cookiecutter.module_name}}.intents
-{%- endif %}
+@app.route("/")
+def index():
+    return render_template("base.html", content=open("README.md").read())
 
-import {{cookiecutter.module_name}}.views
+# CLI INTERFACE ---------------------------------------------------------------
 
 
-def upload_static_assets(cli):
-    import flask_s3
-    flask_s3.create_all(app)

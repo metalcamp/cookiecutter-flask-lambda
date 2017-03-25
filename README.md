@@ -1,7 +1,7 @@
 # cookiecutter-flask-lambda
 
 A simple [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/)
-template to create a web application or an Alexa Skill that is deployed on
+template to create a web application that is deployed on
 [AWS Lambda](https://aws.amazon.com/lambda/details/) using
 [Zappa](https://www.zappa.io) and [Flask](http://flask.pocoo.org). The
 resulting project is using [Pipenv](http://docs.pipenv.org/en/latest/) to
@@ -15,7 +15,6 @@ $ cookiecutter https://github.com/oliverandrich/cookiecutter-flask-lambda.git
 $ cd my-fancy-new-project-name
 $ pipenv install --dev --two
 $ pipenv shell
-$ pip install -e .
 ```
 
 You will be asked about your basic info (name, project name, repo name, etc.).
@@ -26,15 +25,6 @@ the local debugging server and start developing your application.
 $ export FLASK_APP=my_fancy_new_project_name
 $ export FLASK_DEBUG=1
 $ flask run
-```
-
-In case you plan to develop an Alexa skill, you need to fireup HTTPS enabled
-debug server. But keep in mind, that you have to create a SSL certificate
-before you can do so and store ssl.key and ssl.crt in the root directory of
-your project.
-
-```
-$ python https_server.py
 ```
 
 **Enjoy!**
@@ -58,17 +48,9 @@ $ python https_server.py
  HTTPS these days, don't we. SSLify is activated only in production mode.
  * [normalize.css](https://necolas.github.io/normalize.css/) if you don't
  include Bootstrap 4 (See below).
- * It uses the layout for
- [larger flask applications](http://flask.pocoo.org/docs/0.12/patterns/packages/).
- Mainly, because I prefer a little bit more structure in my projects.
 
 ### Optional Features
 
- * Add [Flask-Ask](https://github.com/johnwheeler/flask-ask) to your project to
- develop Alexa skills. This also adds a Python file with the demo memory game
- taken from a
- [tutorial](https://developer.amazon.com/blogs/post/Tx14R0IYYGH3SKT/Flask-Ask-A-New-Python-Framework-for-Rapid-Alexa-Skills-Kit-Development)
- posted on AWS developer blog.
  * Add [Turbolinks](https://github.com/turbolinks/turbolinks)
  and [jQuery](http://jquery.com) to your project. For some simpler projects I
  still prefer these trusted tools.
@@ -84,6 +66,11 @@ information see LICENSE.
  * Add support for Travis CI to the cookiecutter recipe and the project template.
 
 ## Changelog
+
+### 0.5.0
+
+ * Stripped Flask-Ask support. Moved the Alexa stuff to a seperate and simpler cookiecutter template.
+ * Moved to the simple default layout of Flask apps.
 
 ### 0.4.2
 
