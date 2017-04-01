@@ -66,10 +66,12 @@ $ zappa deploy
 $ zappa undeploy
 ```
 
+{%- if cookiecutter.use_mit_license == "y" %}
 ## License
 
 "{{ cookiecutter.project_name }}" is licensed under the MIT license. For more
 information see LICENSE.
+{%- endif %}
 
 ## Changelog
 

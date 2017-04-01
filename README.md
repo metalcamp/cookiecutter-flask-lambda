@@ -67,6 +67,10 @@ information see LICENSE.
 
 ## Changelog
 
+### 0.6.0
+
+ * MIT License can be removed from the new project.
+
 ### 0.5.0
 
  * Stripped Flask-Ask support. Moved the Alexa stuff to a seperate and simpler cookiecutter template.
