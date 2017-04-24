@@ -6,7 +6,6 @@ import logging
 from flask import Flask, render_template
 from flask_s3 import FlaskS3
 from flaskext.markdown import Markdown
-from flask_sslify import SSLify
 
 # SETUP FLASK APPLICATION -----------------------------------------------------
 
