@@ -29,33 +29,6 @@ $ flask run
 
 **Enjoy!**
 
-## Features (aka Batteries included)
-
- * Includes you need to build and deploy an app on
- [AWS Lambda](https://aws.amazon.com/lambda/details/)
-    * [Zappa](https://www.zappa.io)
-    * [Flask](http://flask.pocoo.org)
-    * [Boto3](https://boto3.readthedocs.io/en/latest/)
-    * [awscli](https://github.com/aws/aws-cli)
- * Uses [Pipenv](http://docs.pipenv.org/en/latest/) to manage the virtual
- environment and packages.
- * [pytest](http://doc.pytest.org/en/latest/) and
- [pytest-flask](https://pytest-flask.readthedocs.io/en/latest/) are included to
- ease the testing of your application.
- * [Flask-S3](http://flask-s3.readthedocs.io/en/latest/) to easily serve the
- static assets of your Flask application from your S3 bucket.
- * [Flask-SSLify](https://github.com/kennethreitz/flask-sslify) - we all prefer
- HTTPS these days, don't we. SSLify is activated only in production mode.
- * [normalize.css](https://necolas.github.io/normalize.css/) if you don't
- include Bootstrap 4 (See below).
-
-### Optional Features
-
- * Add [Turbolinks](https://github.com/turbolinks/turbolinks)
- and [jQuery](http://jquery.com) to your project. For some simpler projects I
- still prefer these trusted tools.
- * Add [Bootstrap 4](https://v4-alpha.getbootstrap.com) to your project.
-
 ## License
 
 cookiecutter-flask-lambda is licensed under the MIT license. For more
