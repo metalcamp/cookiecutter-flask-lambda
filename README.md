@@ -13,7 +13,7 @@ manage its virtual environment and packages.
 $ pip install cookiecutter pipenv
 $ cookiecutter https://github.com/oliverandrich/cookiecutter-flask-lambda.git
 $ cd my-fancy-new-project-name
-$ pipenv install --dev --two
+$ pipenv install --dev --three
 $ pipenv shell
 ```
 
@@ -22,7 +22,7 @@ This info will be used in your new project. Afterwards you are ready to fire up
 the local debugging server and start developing your application.
 
 ```
-$ export FLASK_APP=my_fancy_new_project_name
+$ export FLASK_APP=my_fancy_new_project_name.py
 $ export FLASK_DEBUG=1
 $ flask run
 ```
