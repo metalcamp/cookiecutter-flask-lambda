@@ -14,7 +14,7 @@ on your development machine.
 
 ```bash
 $ pip install pipenv
-$ pipenv install --dev --two
+$ pipenv install --dev --three
 $ pipenv shell
 ```
 
