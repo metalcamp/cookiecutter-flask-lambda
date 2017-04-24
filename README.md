@@ -67,6 +67,15 @@ information see LICENSE.
 
 ## Changelog
 
+### 0.7.0
+
+ * Zappa 0.41 is the new minimum version.
+ * Python 3.6 is the default runtime.
+ * Kicked Bootstrap.
+ * Kicked Turbolinks.
+ * Added materialize.css as an option.
+ * Added intercooler.js as an option.
+
 ### 0.6.0
 
  * MIT License can be removed from the new project.

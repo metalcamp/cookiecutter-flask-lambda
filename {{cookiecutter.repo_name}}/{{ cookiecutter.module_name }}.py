@@ -27,9 +27,6 @@ def upload_static_assets(cli):
 # add the filter from Flask-Markdown
 Markdown(app, extensions=['fenced_code'])
 
-# enforce a redirect to HTTPS. It's only active if your not in debug mode.
-SSLify(app, permanent=True)
-
 # VIEWS -----------------------------------------------------------------------
 
 @app.route("/")
