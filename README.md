@@ -40,6 +40,10 @@ information see LICENSE.
 
 ## Changelog
 
+### 0.8.1
+
+ * Added Font Awesome 4.7.0.
+
 ### 0.8.0
 
  * Added Flask-WTF.
