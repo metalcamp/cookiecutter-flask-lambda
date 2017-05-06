@@ -10,6 +10,7 @@ zappa = ">=0.41"
 flask = ">=0.12"
 flask-s3 = ">=0.3"
 flask-markdown = ">=0.3"
+flask-wtf = ">=0.14"
 boto3 = ">=1.4"
 
 [dev-packages]

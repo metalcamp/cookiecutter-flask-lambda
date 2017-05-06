@@ -40,6 +40,11 @@ information see LICENSE.
 
 ## Changelog
 
+### 0.8.0
+
+ * Added Flask-WTF.
+ * Bootstrap 4 is again part of the show. Materialize.css annoys me.
+
 ### 0.7.0
 
  * Zappa 0.41 is the new minimum version.

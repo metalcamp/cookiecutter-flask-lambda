@@ -31,7 +31,3 @@ Markdown(app, extensions=['fenced_code'])
 @app.route("/")
 def index():
     return render_template("base.html", content=open("README.md").read())
-
-# CLI INTERFACE ---------------------------------------------------------------
-
-

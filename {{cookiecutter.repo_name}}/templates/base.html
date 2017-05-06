@@ -3,12 +3,16 @@
     <head>
         <title>{{ cookiecutter.project_name }}</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        {%- if cookiecutter.add_materialize_css == "y" %}
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {%- if cookiecutter.add_bootstrap_4 == "y" %}
             <link rel="stylesheet"
-                  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+                  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+                  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+                  crossorigin="anonymous">
         {%- else %}
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+            <link rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+                  integrity="sha256-HxaKz5E/eBbvhGMNwhWRPrAR9i/lG1JeT4mD6hCQ7s4=" crossorigin="anonymous" />
         {%- endif %}
         {%- raw %}
             <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
@@ -22,14 +26,24 @@
             </div>
         {% endblock content %}
         {%- endraw %}
+
         {%- if cookiecutter.add_jquery == "y" or cookiecutter.add_materialize_css == "y" or cookiecutter.add_intercooler_js == "y" %}
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+                    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                    crossorigin="anonymous"></script>
         {%- endif %}
         {%- if cookiecutter.add_materialize_css == "y" %}
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+                    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+                    crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+                    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+                    crossorigin="anonymous"></script>
         {%- endif %}
         {%- if cookiecutter.add_intercooler_js == "y" %}
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/intercooler-js/1.1.1/intercooler.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/intercooler-js/1.1.1/intercooler.min.js"
+                    integrity="sha256-Wg4F0NRh7DvWHyY54sV8UtEj+s4gf7Pu6LgigSJxPBY="
+                    crossorigin="anonymous"></script>
         {%- endif %}
         {%- raw %}
             <script src="{{ url_for('static', filename='js/app.js') }}"></script>
