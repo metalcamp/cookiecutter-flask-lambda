@@ -1,7 +1,0 @@
-{%- if cookiecutter.add_materialize_css != "y" %}
-.container {
-    margin: 0 auto;
-    padding: 2vmax 2vmax 10vmax 2vmax;
-    max-width: 700px;
-}
-{% endif %}
